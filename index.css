@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&family=EB+Garamond&family=Quattrocento+Sans:ital,wght@1,400;1,700&display=swap");
+
+:root {
+  --active: #333333;
+  --regular: #b9b9b9;
+  --text: #818181;
+  --black: #2b2b2b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+header .div {
+  width: 100%;
+  height: 7vh;
+}
+
+.sticky li {
+  display: inline-block;
+}
+
+.sticky nav {
+  width: 100%;
+  text-align: center;
+  padding: 15px;
+}
+
+.sticky .active {
+  color: var(--active);
+}
+
+.sticky .sub-header {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 200px;
+  z-index: 1;
+  border: 1px solid var(--regular);
+}
+
+.sticky .sub-header li {
+  display: block;
+  padding: 8px;
+  border-bottom: 1px solid var(--regular);
+  text-align: left;
+  transition: all 300ms ease;
+}
+
+.sticky .sub-header li:hover {
+  background-color: #e4e4e4d7;
+  cursor: pointer;
+  a {
+    color: var(--active);
+  }
+}
+
+.sticky .sub:hover .sub-header {
+  display: block;
+}
+
+.sticky {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.sticky ul li a {
+  text-decoration: none;
+  color: var(--regular);
+  font-family: "EB Garamond", serif;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  padding: 5px 15px;
+  line-height: 19px;
+  font-size: 13px;
+  transition: all 300ms ease;
+}
+
+.sticky ul li a:hover {
+  color: var(--active);
+}
+
+section .logo {
+  text-align: center;
+  padding-top: 15vh;
+  padding-bottom: 15vh;
+}
+section .logo img {
+  height: auto;
+  width: 65%;
+}
+
+section {
+  font-family: "Cardo", serif;
+}
+
+section .styled-hr {
+  background-color: rgba(0, 0, 0, 0.13);
+  border: 0pt none;
+  color: rgba(0, 0, 0, 0.13);
+  height: 1px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+section .container {
+  max-width: 960px;
+  margin: auto;
+}
+
+section .offer {
+  text-align: center;
+}
+
+section .offer h2 {
+  font-family: "Cardo", serif;
+  font-size: 32px;
+  color: var(--black);
+  font-weight: 700;
+  line-height: 1.2em;
+}
+
+section .offer a {
+  display: block;
+  text-decoration: none;
+  color: var(--regular);
+  font-size: 24px;
+  font-weight: 700;
+  transition: all 300ms ease;
+}
+section .offer a:hover {
+  color: var(--active);
+}
+
+section .treat {
+  background-color: var(--active);
+  color: #ffffff;
+  font-size: 14px;
+  padding: 8px 12px;
+  font-family: "Cardo", serif;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  border: 2px solid #333333;
+  border-radius: 1px;
+  transition: all 300ms ease;
+}
+
+section .treat:hover {
+  color: var(--active);
+  background-color: #ffffff;
+}
+
+section .book button {
+  background-color: var(--active);
+  color: #ffffff;
+  font-size: 16px;
+  padding: 12px 16px;
+  font-family: "Cardo", serif;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  border: 2px solid #333333;
+  border-radius: 1px;
+  transition: all 300ms ease;
+}
+
+section .book button:hover {
+  color: var(--active);
+  background-color: #ffffff;
+}
+
+section .button,
+section .book {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+section .intro {
+  display: flex;
+  margin-top: 20px;
+}
+
+section .intro .text {
+  flex: 1;
+  font-size: 18px;
+  color: var(--text);
+  font-weight: 700;
+  padding-right: 25px;
+}
+
+section .intro .text p {
+  line-height: 2em;
+}
+
+section .intro .image {
+  flex: 1;
+}
+
+section .intro .image img {
+  width: 100%;
+  height: 100%;
+}
+
+section .reviews {
+  font-family: "Quattrocento Sans", sans-serif;
+  font-style: italic;
+  color: #222222;
+  border-left: 4px solid #ddd;
+  padding-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+}
+
+section .reviews h2 {
+  font-size: 32px;
+}
+section .reviews p {
+  font-size: 16px;
+  line-height: 1.5em;
+}
+
+section .container ul li {
+  text-decoration: none;
+  display: inline-block;
+}
+
+section .container .icons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+section .container .icons a {
+  color: var(--regular);
+  padding: 10px;
+}
+
+section .container .icons a:hover {
+  color: var(--active);
+}
+
+section .hours,
+.telephone {
+  text-align: center;
+}
+
+section .hours h2,
+section .telephone h2 {
+  font-size: 16px;
+}
+
+section .hours p,
+section .telephone p {
+  font-size: 12px;
+  line-height: 1.5em;
+}
+
+.img-footer {
+  margin: auto;
+  width: 50%;
+  height: auto;
+  text-align: center;
+  margin-bottom: 3vh;
+}
